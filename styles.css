@@ -1,0 +1,118 @@
+#titulo_principal {
+    color: rgb(83, 88, 84);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+body {
+    background-color: #e9eff3;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+
+.completada {
+    text-decoration: line-through;
+    color: #888;
+    font-style: italic;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.actions button {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.edit-btn,
+.delete-btn,
+#btnTarea {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.edit-btn {
+    background-color: #f1c40f;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#btnTarea {
+    background-color: rgb(91, 210, 101);
+    color: #0a0000;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+#mensajeError {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    min-height: 1.2rem; 
+    font-weight: bold;
+    text-align: left; 
+    transition: all 0.3s ease;
+}
+
+/* RESPONSIVIDAD  */
+@media (max-width: 400px) {
+    .container {
+        padding: 1.2rem;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .actions {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
